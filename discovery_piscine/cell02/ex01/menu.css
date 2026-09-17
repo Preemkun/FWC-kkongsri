@@ -1,0 +1,71 @@
+body {
+    margin: 0;
+    padding: 50px;
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    display: flex;
+    justify-content: center;
+}
+
+/* แถบเมนูหลัก */
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    background-color: #8b0000;
+    border-radius: 8px;
+}
+
+.navbar li {
+    position: relative;
+}
+
+.dropbtn {
+    display: block;
+    color: white;
+    padding: 16px 24px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+.dropbtn:hover {
+    background-color: #a52a2a;
+    border-radius: 8px;
+}
+
+/* ซ่อนรายการส่วนผสม (Ingredients) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #ffffff;
+    min-width: 260px;
+    box-shadow: 0px 8px 16px rgba(0,0,0,0.15);
+    border-radius: 6px;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.dropdown-content li a {
+    color: #333333;
+    padding: 12px 18px;
+    text-decoration: none;
+    display: block;
+    border-bottom: 1px solid #eeeeee;
+}
+
+.dropdown-content li:last-child a {
+    border-bottom: none;
+}
+
+.dropdown-content li a:hover {
+    background-color: #fff3e0;
+    color: #8b0000;
+}
+
+/* แสดงรายการส่วนผสมเมื่อเอาเมาส์ไปชี้ */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
