@@ -1,0 +1,218 @@
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background-color: #ffffff;
+      color: #1c3850;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* Navbar */
+    .site-header {
+      background-color: #3e8fa5;
+      color: #ffffff;
+      padding: 12px 24px;
+    }
+
+    .header-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .brand-group {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      text-decoration: none;
+      color: #ffffff;
+    }
+
+    .badge-42 {
+      background-color: #00babc;
+      color: #ffffff;
+      font-weight: 800;
+      font-size: 14px;
+      padding: 2px 8px;
+      border-radius: 4px;
+    }
+
+    .brand-title {
+      font-size: 20px;
+      font-weight: 700;
+    }
+
+    /* Home Button */
+    .btn-home {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 6px 16px;
+      font-size: 14px;
+      font-weight: 500;
+      color: #ffffff;
+      background-color: transparent;
+      border: 1px solid rgba(255, 255, 255, 0.8);
+      border-radius: 8px;
+      text-decoration: none;
+      transition: background-color 0.2s;
+    }
+
+    .btn-home:hover {
+      background-color: rgba(255, 255, 255, 0.15);
+    }
+
+    /* Hero Banner */
+    .hero-banner {
+      background: linear-gradient(180deg, #4497ad 0%, #61b3c4 50%, #8dd6e0 100%);
+      padding: 64px 20px;
+      text-align: center;
+    }
+
+    .hero-title {
+      color: #ffffff;
+      font-size: 48px;
+      font-weight: 800;
+    }
+
+    /* Main Content */
+    .main-content {
+      flex: 1;
+      max-width: 1000px;
+      width: 100%;
+      margin: 0 auto;
+      padding: 56px 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .section-title {
+      font-size: 32px;
+      font-weight: 800;
+      color: #1c3850;
+      margin-bottom: 48px;
+    }
+
+    /* Cards Grid */
+    .profiles-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 32px;
+      width: 100%;
+      max-width: 800px;
+    }
+
+    @media (max-width: 768px) {
+      .profiles-grid {
+        grid-template-columns: 1fr;
+        max-width: 400px;
+      }
+    }
+
+    /* Profile Card */
+    .profile-card {
+      background-color: #ffffff;
+      border: 1px solid #e2e8f0;
+      border-radius: 12px;
+      padding: 40px 24px;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+    }
+
+    .avatar-wrapper {
+      width: 140px;
+      height: 140px;
+      border-radius: 50%;
+      box-shadow: 0 0 0 6px rgba(83, 184, 200, 0.2);
+      overflow: hidden;
+      margin-bottom: 24px;
+    }
+
+    .avatar-img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .profile-name {
+      font-size: 24px;
+      font-weight: 800;
+      color: #193549;
+      margin-bottom: 8px;
+    }
+
+    .profile-role {
+      font-size: 15px;
+      font-weight: 600;
+      color: #53b8c8;
+      margin-bottom: 32px;
+    }
+
+    /* CV Button */
+    .btn-cv {
+      width: 100%;
+      background-color: #53b8c8;
+      color: #ffffff;
+      border: none;
+      border-radius: 8px;
+      padding: 14px 20px;
+      font-size: 15px;
+      font-weight: 600;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      transition: background-color 0.2s;
+    }
+
+    .btn-cv:hover {
+      background-color: #41a5b5;
+    }
+
+    .btn-cv svg {
+      width: 18px;
+      height: 18px;
+    }
+
+    /* Footer */
+    .site-footer {
+      margin-top: auto;
+      border-top: 1px solid #e2e8f0;
+      padding: 24px;
+      text-align: center;
+      font-size: 14px;
+      color: #64748b;
+    }
+
+    .footer-title {
+      margin-bottom: 8px;
+    }
+
+    .footer-logins {
+      font-family: monospace;
+    }
+
+    .login-link {
+      color: #41a5b5;
+      text-decoration: none;
+    }
+
+    .divider {
+      margin: 0 6px;
+      color: #cbd5e1;
+    }
+  
